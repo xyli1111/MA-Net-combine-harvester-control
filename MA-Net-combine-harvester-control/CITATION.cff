@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript."
+title: "MA-Net for prediction-guided proactive control of combine harvesters"
+authors:
+  - family-names: "Du"
+    given-names: "Yuefeng"
+  - family-names: "Liu"
+    given-names: "Lei"
+version: 1.0.0
+date-released: 2026-06-28
+repository-code: "https://github.com/YOUR_USERNAME/MA-Net-combine-harvester-control"

@@ -1,0 +1,29 @@
+seed: 42
+device: auto
+num_threads: 1
+
+data:
+  input_columns: [HV, TCS, FS, BR, IR, LR]
+  target_columns: [HV, TCS, FS, BR, IR, LR]
+  input_length: 64
+  pred_length: 40
+  batch_size: 32
+  val_ratio: 0.2
+  split_mode: chronological
+
+model:
+  input_dim: 6
+  output_dim: 6
+  hidden_dim: 64
+  memory_size: 256
+  siam_heads: 4
+  dropout: 0.1
+  lstm_layers: 1
+  update_threshold: 0.5
+
+train:
+  epochs: 50
+  lr: 0.001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  checkpoint: checkpoints/manet.pt
